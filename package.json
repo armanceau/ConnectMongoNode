@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/armanceau/ConnectMongoNode/issues"
   },
-  "homepage": "https://github.com/armanceau/ConnectMongoNode#readme"
+  "homepage": "https://github.com/armanceau/ConnectMongoNode#readme",
+  "dependencies": {
+    "mongodb": "^6.9.0"
+  }
 }
