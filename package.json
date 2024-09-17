@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/armanceau/ConnectMongoNode#readme",
   "dependencies": {
+    "express": "^4.21.0",
     "mongodb": "^6.9.0"
   }
 }

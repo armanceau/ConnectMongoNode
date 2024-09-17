@@ -6,6 +6,7 @@ async function connectToMongo(collectionName) {
   try {
     await client.connect();
     console.log("Connecté à MongoDB");
+    //taskManager = nom de la base de données à l'url : mongodb://localhost:27017
     return client.db("taskManager").collection(collectionName);
   } catch (error) {
     console.error('Erreur de connexion à MongoDB:', error);
@@ -18,7 +19,8 @@ function findAllTasks(collection) {
 }
 
 function main() {
-  connectToMongo("tasks")
+  //task : nom de la collection
+  connectToMongo("task")
     .then(collection => {
       return findAllTasks(collection);
     })
@@ -32,3 +34,7 @@ function main() {
 }
 
 main();
+
+module.exports = {
+  main
+};
